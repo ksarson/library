@@ -7,7 +7,34 @@
         <title>Library</title>
     </head>
     <body>
-        Test
+        <div id="library-container"></div>
+        <div id="add-book-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form class="new-book">
+                <div class="actions">
+                    <button class="add">Add New Book</button>
+                </div>
+                <div class="inputs">
+                    <label for="title">
+                        Title:
+                        <input id="title" type="text" />
+                    </label>
+                    <label for="title">
+                        Author:
+                        <input id="title" type="text" />
+                    </label>
+                    <label for="title">
+                        Page Count:
+                        <input id="title" type="number" />
+                    </label>
+                    <label for="cover">
+                        Cover Art:
+                        <input id="cover" type="image" />
+                    </label>
+                </div>
+            </form>
+        </div>
     </body>
     <script src="./library.js"></script>
 </html>
