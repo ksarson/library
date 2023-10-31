@@ -10,11 +10,16 @@
         <div id="library-container"></div>
         <div id="add-book-modal" class="modal">
             <div class="modal-content">
-                <form class="new-book">
+                <form id="new-book-form" class="new-book">
                     <div class="inputs">
                         <label class="input-label" for="title">
                             Title:
-                            <input class="input-field" id="title" type="text" />
+                            <input
+                                class="input-field"
+                                id="title"
+                                type="text"
+                                required
+                            />
                         </label>
                         <label class="input-label" for="author">
                             Author:
@@ -22,6 +27,7 @@
                                 class="input-field"
                                 id="author"
                                 type="text"
+                                required
                             />
                         </label>
                         <label class="input-label" for="pages">
@@ -30,7 +36,15 @@
                                 class="input-field"
                                 id="pages"
                                 type="number"
+                                required
                             />
+                        </label>
+                        <label class="input-label" for="read">
+                            Read?:
+                            <select class="input-field" id="read" required>
+                                <option value="true">Yes</option>
+                                <option value="false">No</option>
+                            </select>
                         </label>
                         <label class="input-label" for="cover">
                             Cover Art:
@@ -38,11 +52,14 @@
                                 class="input-field"
                                 id="cover"
                                 type="file"
+                                required
                                 accept="image/png, image/gif, , image/jpg, image/jpeg"
                             />
                         </label>
                         <div class="actions">
-                            <button class="add">Add New Book</button>
+                            <button type="submit" class="add">
+                                Add New Book
+                            </button>
                         </div>
                     </div>
                 </form>

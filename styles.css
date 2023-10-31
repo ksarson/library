@@ -4,17 +4,11 @@
 }
 
 body {
-    background-color: lightcyan;
     display: grid;
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     width: 100vw;
 }
-
-/* .header {
-    display: grid;
-    
-} */
 
 .modal {
     display: none;
@@ -28,27 +22,28 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 
     .modal-content {
-        background-color: #fefefe;
+        background-color: rgb(255, 230, 180);
+        border: solid gray 2px;
+        border-radius: 8px;
         display: flex;
-        margin: 15% auto;
+        margin: auto auto;
+        min-height: 250px;
+        min-width: 400px;
+        max-width: 800px;
         padding: 20px;
-        border: 1px solid #888;
         width: 80%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         .new-book {
             display: grid;
             flex: 1;
             padding: 20px;
 
-            .actions {
-                .add {
-                    background-color: orange;
-                    border-radius: 8px;
-                    font-size: 16px;
-                    font-weight: 700;
-                    height: 40px;
-                    width: 150px;
-                }
+            .actions > .add {
+                width: 150px;
             }
 
             .inputs {
@@ -90,8 +85,17 @@ body {
     }
 }
 
+.add {
+    background-color: orange;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+    width: 200px;
+}
+
 #library-container {
-    background-color: lightgray;
+    background-color: orange;
     display: grid;
     font-size: 20px;
     gap: 20px;
@@ -102,7 +106,7 @@ body {
 #add-button,
 #book-container {
     align-items: center;
-    background-color: gainsboro;
+    background-color: rgb(255, 230, 180);
     border: solid gray 1px;
     border-radius: 12px;
     box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.2);
@@ -112,8 +116,17 @@ body {
     gap: 20px;
     justify-content: space-around;
     padding: 20px 0;
+    position: relative;
 }
 
 #book-info {
     text-align: center;
+}
+
+#delete-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    position: absolute;
+    right: 16px;
+    top: 16px;
 }
