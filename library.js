@@ -23,11 +23,77 @@ addBookToLibrary(
     './img/theMockingjay.png'
 );
 
-addBookToLibrary('Title 1', 'Author 1', 500, true, './img/theHungerGames.png');
-addBookToLibrary('Title 2', 'Author 2', 500, false, './img/theHungerGames.png');
-addBookToLibrary('Title 3', 'Author 3', 500, false, './img/theHungerGames.png');
-addBookToLibrary('Title 4', 'Author 4', 500, false, './img/theHungerGames.png');
-addBookToLibrary('Title 5', 'Author 5', 500, true, './img/theHungerGames.png');
+addBookToLibrary(
+    'Animal Farm',
+    'George Orwell',
+    128,
+    true,
+    './img/animalFarm.png'
+);
+addBookToLibrary(
+    'The Hatchet',
+    'Gary Paulson',
+    195,
+    false,
+    './img/theHatchet.png'
+);
+addBookToLibrary('Life of Pi', 'Yann Martel', 368, false, './img/lifeOfPi.png');
+addBookToLibrary(
+    'Romeo and Juliet',
+    'Author 4',
+    309,
+    false,
+    './img/romeoAndJuliet.png'
+);
+addBookToLibrary(
+    "Harry Potter And The Sorcerer's Stone",
+    'J.K. Rowling',
+    309,
+    true,
+    './img/harryPotterAndTheSorcerersStone.jpg'
+);
+addBookToLibrary(
+    'Harry Potter And The Chamber of Secrets',
+    'J.K. Rowling',
+    341,
+    true,
+    './img/harryPotterAndTheChamberOfSecrets.jpg'
+);
+addBookToLibrary(
+    'Harry Potter And The Prisoner of Azkaban',
+    'J.K. Rowling',
+    435,
+    true,
+    './img/harryPotterAndThePrisonerOfAzkaban.jpg'
+);
+addBookToLibrary(
+    'Harry Potter And The Goblet of Fire',
+    'J.K. Rowling',
+    734,
+    true,
+    './img/harryPotterAndTheGobletOfFire.jpg'
+);
+addBookToLibrary(
+    'Harry Potter And The Order of The Phoenix',
+    'J.K. Rowling',
+    870,
+    false,
+    './img/harryPotterAndTheOrderOfThePhoenix.jpg'
+);
+addBookToLibrary(
+    'Harry Potter And The Hald-Blood Prince',
+    'J.K. Rowling',
+    652,
+    false,
+    './img/harryPotterAndTheHalfBloodPrince.jpg'
+);
+addBookToLibrary(
+    'Harry Potter And The Deathly Hallows',
+    'J.K. Rowling',
+    759,
+    false,
+    './img/harryPotterAndTheDeathlyHallows.jpg'
+);
 //#endregion
 
 initializeLibrary();
