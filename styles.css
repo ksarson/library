@@ -10,6 +10,18 @@ body {
     width: 100vw;
 }
 
+.bold {
+    font-weight: 700;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
 .modal {
     display: none;
     position: fixed;
@@ -121,6 +133,7 @@ body {
 
 #book-info {
     text-align: center;
+    padding: 10px;
 }
 
 #delete-button {

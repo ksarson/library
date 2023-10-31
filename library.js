@@ -177,15 +177,13 @@ function addBookToUI(book) {
 
     const bookInfo = document.createElement('div');
     bookInfo.id = 'book-info';
-    bookInfo.innerText =
-        book.title +
-        '\n' +
-        book.author +
-        '\n' +
-        book.pages +
-        ' pages' +
-        '\n' +
-        (book.read ? 'Read' : 'Not Read');
+    bookInfo.innerHTML = `${book.title}<br>${book.author}<br>${
+        book.pages
+    } pages<br>${
+        book.read
+            ? '<span class="bold green">Read</span>'
+            : '<span class="bold red">Not Read</span>'
+    }`;
 
     // #region Toggle Read
     const toggleReadButton = document.createElement('button');
@@ -210,15 +208,13 @@ function updateBookInfo() {
     const bookContainers = document.querySelectorAll('#book-container');
     myLibrary.forEach((book, index) => {
         const bookInfo = bookContainers[index].querySelector('#book-info');
-        bookInfo.innerText =
-            book.title +
-            '\n' +
-            book.author +
-            '\n' +
-            book.pages +
-            ' pages' +
-            '\n' +
-            (book.read ? 'Read' : 'Not Read');
+        bookInfo.innerHTML = `${book.title}<br>${book.author}<br>${
+            book.pages
+        } pages<br>${
+            book.read
+                ? '<span class="bold green">Read</span>'
+                : '<span class="bold red">Not Read</span>'
+        }`;
     });
 }
 
