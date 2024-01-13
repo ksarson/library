@@ -1,3 +1,13 @@
+class Book {
+    constructor(title, author, pages, read, coverURL) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+        this.coverURL = coverURL;
+    }
+}
+
 const myLibrary = [];
 
 // #region Add Default Books
@@ -97,14 +107,6 @@ addBookToLibrary(
 //#endregion
 
 initializeLibrary();
-
-function Book(title, author, pages, read, coverURL) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.coverURL = coverURL;
-}
 
 function addBookToLibrary(title, author, pages, read, coverURL) {
     let book = new Book(title, author, pages, read, coverURL);
